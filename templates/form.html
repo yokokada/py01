@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>成績入力フォーム</title>
+</head>
+<body>
+    <h1>成績入力フォーム</h1>
+    <form action="/add_score" method="post">
+        <label for="name">名前:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="kokugo">国語:</label>
+        <input type="number" id="kokugo" name="subject1" required>点　
+
+        <label for="eigo">英語:</label>
+        <input type="number" id="eigo" name="subject2" required>点　
+
+        <label for="suugaku">数学:</label>
+        <input type="number" id="suugaku" name="subject3" required>点　<br>
+
+        <label for="shakai">社会:</label>
+        <input type="number" id="shakai" name="subject4" required>点　
+
+        <label for="rika">理科:</label>
+        <input type="number" id="rika" name="subject5" required>点　<br><br>
+
+        <input type="submit" value="送信">
+    </form>
+</body>
+</html>
+
+

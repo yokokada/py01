@@ -1,0 +1,42 @@
+table{
+    border: 1px solid;
+}
+th, td {
+    border: 1px solid black;
+    padding: 2px;
+    text-align: left;
+}
+button{
+    margin-top: 40px;
+}
+button a{
+    text-decoration: none;
+    color: black;
+}
+form {
+    /* background-color: azure; */
+    margin-bottom: 0px;
+}
+#kokugo{
+    width: 40px;
+    height: auto;
+}
+#eigo{
+    width: 40px;
+    height: auto;
+    
+}
+#suugaku{
+    width: 40px;
+    height: auto;
+    
+}
+#rika{
+    width: 40px;
+    height: auto;
+    
+}
+#shakai{
+    width: 40px;
+    height: auto;
+}

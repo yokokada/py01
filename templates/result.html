@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Result</title>
+</head>
+<body>
+    <h1>総合結果</h1>
+    <table>
+        <tr>
+            <th>名前</th>
+            <th>平均点</th>
+            <th>合/否</th>
+        </tr>
+        {% for student in students %}
+        <tr>
+            <td>{{ student['name'] }}</td>
+            <td>{{ student['avg'] }}</td>
+            <td>{{ student['result'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <button><a href="{{ url_for('index') }}">入力画面に戻る</a></button>
+</body>
+</html>
